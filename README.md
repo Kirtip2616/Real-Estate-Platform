@@ -16,6 +16,7 @@ A **web-based Real Estate Platform** to simplify property browsing, listing, and
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
 - [Installation](#-installation)
+- [License](#-license)
 - [Usage](#-usage)
 - [User Interface Design and Outputs](#-user-interface-design-and-outputs)
 - [Future Enhancements](#-future-enhancements)
@@ -98,7 +99,15 @@ The **Real Estate Platform** bridges the gap between property seekers and owners
 5. **Access the app**
 
    Open `http://localhost:3000` in your browser.
+---
 
+## 📜License
+
+- **This project is licensed under a Proprietary License.**
+- All rights reserved.
+- You may not copy, modify, distribute, or use this project, in whole or in part, without explicit written permission from the author.
+- Commercial or personal use without permission is strictly prohibited.
+See the full [LICENSE](LICENSE) file for details. 
 ---
 
 ## 🎮 Usage
@@ -148,9 +157,10 @@ The **Real Estate Platform** bridges the gap between property seekers and owners
 
 ---
 
-## 👩‍💻 Contributor
+## 👩‍💻Author
 
-- **Kirti Pawar** 
+- **Kirti Pawar**
+- **EMAIL**:kirtivpawar26@gmail.com
 
 
 
