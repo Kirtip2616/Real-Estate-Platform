@@ -19,7 +19,7 @@ A **web-based Real Estate Platform** to simplify property browsing, listing, and
 - Installation
 - License
 - Contributions 
-- Usage]
+- Usage
 - User Interface Design and Outputs
 - Future Enhancements
 - Author
