@@ -1,0 +1,411 @@
+"use strict";(self.webpackChunkhousing_demand=self.webpackChunkhousing_demand||[]).push([[6551],{35266:(e,t,r)=>{r.d(t,{G:()=>onType});var i=r(89353),s=r(8487);const a={SEARCH_NO_SUGGESTIONS:()=>({category:"search",action:"no_suggestions",nonInteractive:!0})},o=s.P`
+  query($searchQuery: SearchQueryInput!, $variant: String) {
+    typeAhead(searchQuery: $searchQuery, variant: $variant) {
+      results {
+        id
+        name
+        displayType
+        type
+        subType
+        url
+        canonical
+        mobileUrl
+        center
+        uniqueId
+      }
+      defaultUrl
+      isCrossCitySearch
+    }
+  }
+`,onType=function(e){let{excludeEntities:t=[],variant:r="default",eventCityObj:s,rows:l,serviceProp:n,categoryProp:c,subCategory:p,allowedCrossCity:d}=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};return(u,y,g)=>{let{fetch:m}=g;const{filters:{entities:h=t,selectedCity:f,service:v,category:b}}=y();return m({apiName:"TYPE_AHEAD_API",cacheType:"cache-first",query:{query:o,variables:JSON.stringify({searchQuery:{name:e,service:n||v,category:c||b,city:s||f,subCategory:p,excludeEntities:h.filter((e=>!!e.id)),rows:l,allowedCrossCity:d},variant:r})}}).catch((()=>({data:{data:{typeAhead:{results:[],isCrossCitySearch:!1}}}}))).then((e=>{let{data:{data:{typeAhead:t}={}}={}}=e;return(!t||t.results instanceof Array&&0===t.results.length)&&u((0,i.track)({},"SEARCH_NO_SUGGESTIONS","GA",a)),t}))}}},85278:(e,t,r)=>{r.d(t,{default:()=>$});var i=r(37900),s=r(3467),a=r(35266),o=r(79181),l=r(42788),n=r(92170),c=r(3545);const p={name:"1uuyic",styles:"background-color:#ffffff;padding:0px 16px;width:100%;"},d={name:"1vlcdgo",styles:"position:absolute;top:42px;margin-left:16px;width:634px;background:#ffffff;box-shadow:1px 0px 4px rgb(78 78 78 / 7%);border:1px solid #ebebeb;"},u={name:"1bafvg9",styles:"position:absolute;top:39px;margin-left:16px;width:634px;background:#ffffff;box-shadow:1px 0px 4px rgb(78 78 78 / 7%);border:1px solid #ebebeb;"},y={name:"1a0m016",styles:"height:auto;margin-left:-16px;position:relative;z-index:2;margin-top:16px;"},g={name:"1fes8kl",styles:"position:relative;width:634px;"},m=(0,l.css)("width:100%;padding:0 40px;line-height:35px;margin-top:6px;border-radius:0px;background-color:#ffffff;border:1px solid #ebebeb;&::placeholder{color:#767676;font-size:14px;",(0,c.vS)(),";}"),h=(0,l.css)("font-size:16px;font-weight:bold;position:absolute;right:16px;top:17px;&::before{",(0,n.ZP)("crossCircle"),";color:#767676;}"),f=(0,l.css)("font-size:16px;color:#767676;font-weight:bold;position:absolute;left:16px;top:16px;&:before{",(0,n.ZP)("search"),"}"),v={name:"wrsrym",styles:"display:flex;justify-content:space-between;align-content:center;height:48px;line-height:48px;margin:0 16px;color:#191919;font-size:14px;border-bottom:1px solid #ececec;"},b=(0,l.css)("text-transform:uppercase;font-size:12px;color:#767676;",(0,c.vS)(),";"),I=(0,l.css)("width:75%;font-size:14px;",(0,c.vS)(),";"),P={name:"692nf5",styles:"font-size:14px;display:inline-block;width:14px;height:14px;margin-right:8px;"},x=(0,l.css)("color:rgb(0,0,0);font-weight:500;margin:16px 0px 0px 16px;&:before{",P," ",(0,n.ZP)("shortlistFilled"),"}");var S=r(66777),C=r(11540);const T={COMPARE_PROPERTY_SEARCH_OPEN:()=>({category:"compare",action:"search_open"})},$=(0,o.Z)({actions:{onType:a.G,fetchShortlistedData:C.f}})((e=>{let{addProjectImageClicked:t,onType:r,addProject:a,fetchShortlistedData:o,currentListingId:n}=e;const c=(0,i.useRef)(null),[P,C]=(0,i.useState)(""),[$,_]=(0,i.useState)([]),[E,A]=(0,i.useState)(!1),[j,k]=(0,i.useState)(!0),[R,w]=(0,i.useState)([]),N=(0,S.Z)(T);(0,i.useEffect)((()=>{N("COMPARE_PROPERTY_SEARCH_OPEN"),o().then((function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:[];const t=e.filter((e=>{let{listingId:t}=e;return t!==n}));w(t)}))}),[]),(0,i.useEffect)((()=>{t&&c.current&&c.current.focus(),t&&A(!0)}),[t]);const O=(0,s.Z)((e=>{const t=e.trim();t&&r(t,{variant:"onlyProject"}).then((e=>{let{results:t}=e;_(t||[]),k(!1)}))}),300),D=(0,i.useCallback)((e=>{O(e)}),[]);return(0,l.jsx)(i.Fragment,null,(0,l.jsx)("div",{css:y},(0,l.jsx)("div",{css:p},(0,l.jsx)("div",{css:g},(0,l.jsx)("div",{css:f}),(0,l.jsx)("input",{css:m,placeholder:"Search Projects to Compare",value:P,onChange:e=>{const{target:{value:t}={}}=e;C(t),k(!0),D(t),A(!0)},ref:c,onClick:()=>A(!0)}),""!==P&&(0,l.jsx)("div",{css:h,onClick:()=>C("")}),!P&&R.length>0&&E&&(0,l.jsx)("div",{css:h,onClick:()=>A(!1)}))),!P&&R.length>0&&E&&(0,l.jsx)("div",{css:d},(0,l.jsx)("div",{css:x},"Suggested Projects"),R.map((e=>{let{title:t,address:{address:r},listingId:i,propertyType:s}=e;return(0,l.jsx)("div",{key:i,css:v,onClick:()=>{a(i),A(!1)}},(0,l.jsx)("div",{css:I},`${t}, ${r}`),(0,l.jsx)("div",{css:b},s))}))),P&&!j&&$.length>0&&E&&(0,l.jsx)("div",{css:u},$.map((e=>{const{name:t,id:r,type:i}=e;return t?(0,l.jsx)("div",{key:r,css:v,onClick:()=>{a(r),A(!1),C("")}},(0,l.jsx)("div",{css:I},t),(0,l.jsx)("div",{css:b},i)):null})))))}))},11540:(e,t,r)=>{r.d(t,{Y:()=>fetchPropertyImages,f:()=>fetchShortlistedData});var i=r(8487),s=r(71575);const a=i.P`
+  query(
+    $service: String!
+    $category: String
+    $count: Int
+    $userId: ID
+    $cityId: String
+    $visitorId: String
+  ) {
+    recommendedProperties(
+      service: $service
+      category: $category
+      count: $count
+      userId: $userId
+      cityId: $cityId
+      visitorId: $visitorId
+    ) {
+      features {
+        label
+        description
+      }
+      updatedAt
+      coverImage {
+        src
+        alt
+        videoUrl
+      }
+      imageCount
+      title
+      galleryTitle
+      propertyType
+      isActiveProperty
+      subtitle
+      displayPrice {
+        value
+        displayValue
+        unit
+        deposit
+      }
+      address {
+        address
+        url
+      }
+      url
+      label
+      badge
+      ownerListingBadge
+      listingId
+      originalListingId
+      postedDate
+      coords
+      furnishingType
+      builtUpArea {
+        value
+        unit
+      }
+      sellerCount
+      promotions
+      brands {
+        name
+      }
+      sellers {
+        name
+        id
+        image
+        firmName
+        url
+        type
+        isPrime
+        sellerBadge
+        designation
+        phone {
+          partialValue
+        }
+        isCertifiedAgent
+      }
+      highlights
+      digitour {
+        url
+      }
+      socialUrgency {
+        msg
+      }
+      tags
+      emi
+      details {
+        config {
+          propertyConfig {
+            key
+            label
+          }
+        }
+        images {
+          type
+          images {
+            src
+            alt
+            tag
+            caption
+            videoUrl
+          }
+        }
+      }
+    }
+  }
+`,o=i.P`
+  query($propertyId: Int!, $propertyType: String!) {
+    details(propertyId: $propertyId, propertyType: $propertyType) {
+      details {
+        images {
+          type
+          images {
+            src
+            alt
+            tag
+            caption
+            videoUrl
+          }
+        }
+      }
+    }
+  }
+`,fetchShortlistedData=function(){return(e,t,r)=>{let{fetch:i}=r;const{routeParams:{query:{uid:o},params:{type:l}}}=t();if("recommended"===l){const{filters:{service:e,category:r,selectedCity:s}={},cookies:{_ga:l,is_return_user:n}}=t(),{id:c}=s||{};let p;return"undefined"!=typeof _paq&&_paq.push([function(){p=this.getVisitorId()}]),o||l&&n?i({apiName:"RECOMMENDED_PROPERTIES_API",cacheType:"network-first",query:{query:a,variables:JSON.stringify({service:e,category:r,count:20,userId:o,cityId:c,visitorId:p})}}).then((e=>{let{data:{data:{recommendedProperties:t}}}=e;return t||[]})).catch((()=>[])):Promise.resolve([])}return e((0,s.yM)())}},fetchPropertyImages=e=>{let{listingId:t,propertyType:r}=e;return async(e,i,s)=>{let{fetch:a}=s;return a({cancelPrevious:!0,apiName:"GET_IMAGES_API",cacheType:"stale",controller:"SEARCH_FETCH_DATA",query:{query:o,variables:JSON.stringify({propertyId:parseInt(t),propertyType:r})}}).catch((e=>e)).then((e=>{let{status:t,data:{data:r}={}}=e;const{details:i}=r||{};if(200===t)return i}))}}},71575:(e,t,r)=>{r.d(t,{f0:()=>propertiesContacted,gT:()=>getUserLeadProgressDetails,uo:()=>getSeenProperties,yM:()=>getSavedProperties});var i=r(1782),s=r(8487),a=r(59254);const o=s.P`
+  query($userId: String) {
+    userLeadProgressDetails(userId: $userId) {
+      totalLeadsBuy
+      totalLeadsRent
+      chancesInPercentageBuy
+      chancesInPercentageRent
+      propertyIdsBuy
+      propertyIdsRent
+    }
+  }
+`,l=s.P`
+  query(
+    $product: String
+    $category: String
+    $service: String
+    $fetchBothBuyRentCommercialData: Boolean
+  ) {
+    propertiesContacted(
+      product: $product
+      category: $category
+      service: $service
+      fetchBothBuyRentCommercialData: $fetchBothBuyRentCommercialData
+    ) {
+      property {
+        title
+        subtitle
+        coverImage {
+          src
+        }
+        url
+        description {
+          overview
+        }
+        sellers {
+          name
+          id
+          image
+          url
+          type
+          designation
+          isPrime
+          phone {
+            partialValue
+          }
+          isCertifiedAgent
+        }
+        address {
+          address
+        }
+        displayPrice {
+          displayValue
+        }
+        features {
+          label
+          description
+        }
+        apartmentTypeIds
+        propertyTypeId
+        price
+        propertyType
+        isUc
+        imageCount
+        listingId
+        location
+        localityId
+        serviceType
+      }
+      status
+      phone
+      sellerUuid
+    }
+  }
+`,n=s.P`
+  query(
+    $service: String!
+    $category: String!
+    $product: String
+    $propertyIdsWithType: JSON!
+  ) {
+    bulkPropertyDetails(
+      service: $service
+      category: $category
+      product: $product
+      propertyIdsWithType: $propertyIdsWithType
+    ) {
+      features {
+        label
+        description
+      }
+      updatedAt
+      coverImage {
+        src
+        alt
+        videoUrl
+      }
+      imageCount
+      title
+      meta
+      galleryTitle
+      propertyType
+      isActiveProperty
+      subtitle
+      displayPrice {
+        value
+        displayValue
+        unit
+        deposit
+      }
+      address {
+        address
+        url
+      }
+      url
+      label
+      badge
+      listingId
+      originalListingId
+      postedDate
+      coords
+      furnishingType
+      serviceType
+      builtUpArea {
+        value
+        unit
+      }
+      price
+      sellerCount
+      promotions
+      brands {
+        name
+      }
+      sellers {
+        name
+        id
+        image
+        firmName
+        url
+        type
+        isPrime
+        designation
+        phone {
+          partialValue
+        }
+        isCertifiedAgent
+      }
+      highlights
+      digitour {
+        url
+      }
+      socialUrgency {
+        msg
+      }
+      tags
+      emi
+      details {
+        config {
+          propertyConfig {
+            key
+            label
+          }
+        }
+        images {
+          type
+          images {
+            src
+            alt
+            tag
+            caption
+            videoUrl
+          }
+        }
+      }
+    }
+  }
+`,c=s.P`
+  query($propertyIdsWithType: JSON!) {
+    bulkPropertyDetailsAllCommercialServices(
+      propertyIdsWithType: $propertyIdsWithType
+    ) {
+      features {
+        label
+        description
+      }
+      updatedAt
+      coverImage {
+        src
+        alt
+        videoUrl
+      }
+      imageCount
+      title
+      meta
+      galleryTitle
+      propertyType
+      isActiveProperty
+      subtitle
+      displayPrice {
+        value
+        displayValue
+        unit
+        deposit
+      }
+      address {
+        address
+        url
+      }
+      url
+      label
+      badge
+      listingId
+      originalListingId
+      postedDate
+      coords
+      furnishingType
+      serviceType
+      builtUpArea {
+        value
+        unit
+      }
+      price
+      sellerCount
+      promotions
+      brands {
+        name
+      }
+      sellers {
+        name
+        id
+        image
+        firmName
+        url
+        type
+        isPrime
+        designation
+        phone {
+          partialValue
+        }
+        isCertifiedAgent
+      }
+      highlights
+      digitour {
+        url
+      }
+      socialUrgency {
+        msg
+      }
+      tags
+      emi
+      details {
+        config {
+          propertyConfig {
+            key
+            label
+          }
+        }
+        images {
+          type
+          images {
+            src
+            alt
+            tag
+            caption
+            videoUrl
+          }
+        }
+      }
+    }
+  }
+`,propertiesContacted=(e,t)=>(r,s,a)=>{let{fetch:o}=a;const{filters:{service:n,category:c}={},login:{loggedIn:p}={}}=s();let d=(0,i.Z)(n,c);if(!p)return Promise.resolve([]);["buy","rent","commercial"].includes(d)||(d="buy");const u=!t&&"commercial"===c;return o({apiName:"PROPERTIES_CONTACTED",cancelPrevious:!0,product:d,query:{query:l,variables:JSON.stringify({product:d,category:c,service:n,fetchBothBuyRentCommercialData:u,...e})}}).then((e=>{let{data:{data:{propertiesContacted:t}={}}}=e;return t})).catch((e=>[]))},getSeenProperties=(e,t,r)=>{let{project:s=[],project_listing:a=[],resale:o=[],rent:l=[]}=e;return(e,p,d)=>{let{fetch:u}=d;const{filters:{service:y,category:g}={}}=p();let m=(0,i.Z)(y,g);if("buy"===m&&!(s.length||o.length||a.length)||"rent"===m&&!l.length)return Promise.resolve([]);["buy","rent","commercial"].includes(m)||(m="buy");const h=!r&&"commercial"===g;return u({apiName:"SEEN_PROPERTIES_API",controller:"SEEN_PROPERTIES",query:{query:h?c:n,variables:JSON.stringify({service:y,category:g,product:m,propertyIdsWithType:{project:s.map((e=>`${e}_project`)).concat(a),resale:o.map((e=>`${e}_resale`)),rent:l.map((e=>`${e}_rent`))}})}}).then((function(){let{data:{data:{bulkPropertyDetails:e,bulkPropertyDetailsAllCommercialServices:r}={}}={}}=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return t.map((t=>{let{id:i}=t;return((h?r:e)||[]).find((function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};const{listingId:t}=e||{};return t===i}))})).filter(Boolean)}))}},getSavedProperties=e=>async(t,r,s)=>{let{fetch:o}=s;const{filters:{service:l,category:p},shell:{useragent:{isMobile:d}}}=r();let u=(0,i.Z)(l,p);try{await t((0,a.w)(!0))}catch(e){throw new Error(e)}let{favorites:{data:{project:y=[],project_listing:g=[],resale:m=[],rent:h=[],commercial_resale:f=[],commercial_rent:v=[],commercial_project:b=[]}={}}}=r();y=y.slice(-5),g=g.slice(-5),m=m.slice(-5),h=h.slice(-20),f=f.slice(-15),v=v.slice(-15),b=b.slice(-15),["buy","rent","commercial"].includes(u)||(u="buy");let I={},P=0;if("buy"===u?(I={project:d?y.map((e=>`${e}_project`)).concat(g):y.map((e=>`${e}_project`)),resale:m.map((e=>`${e}_resale`))},P=I.resale.length+I.project.length):"rent"===u?(I={rent:h},P=I.rent.length):"commercial"===u&&(I={project:b.map((e=>`${e}_project`)),resale:f.map((e=>`${e}_resale`)),rent:v},P=I.resale.length+I.project.length+I.rent.length),I=Object.keys(I).reduce(((e,t)=>{const r=I[t]||[];return r.length&&(e[t]=r),e}),{}),!P)return[];const x={service:l,category:p,product:u,propertyIdsWithType:I},S=!e&&"commercial"===p;try{const{data:{data:{bulkPropertyDetails:e,bulkPropertyDetailsAllCommercialServices:t}}}=await o({apiName:"SHORTLISTED_API",cacheType:"network-first",method:P>30?"post":"get",[P>30?"body":"query"]:{query:S?c:n,variables:JSON.stringify(x)}});return S?t:e}catch(e){return console.error(e),[]}},getUserLeadProgressDetails=()=>(e,t,r)=>{let{fetch:i}=r;const{login:{loggedIn:s,uuid:a}={}}=t();return s&&a?i({apiName:"GET_USER_LEAD_PROGRESS_DETAILS",cancelPrevious:!0,query:{query:o,variables:{userId:a}}}).then((e=>{let{data:{data:{userLeadProgressDetails:t}={}}}=e;return t})):Promise.resolve([])}}}]);

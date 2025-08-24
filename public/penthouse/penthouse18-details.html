@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head><title>Penthouse details</title>
+<link rel="stylesheet" href="apt-styles.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Oa_H5qhCAaP-k9egc",
+      });
+   })();
+</script>
+
+</head>
+<body>
+<section class="apt-details">
+    <!-- <h2 class="section-title">Apartment Details</h2> -->
+
+    <!-- Image Carousel -->
+    <div class="slider-container">
+        
+        <button class="slider-btn prev-btn">&#9664;</button>
+        <div class="image-slider">
+            <div class="image-card">
+                <img src="ph2/ext.jpg" alt="Balcony">
+            </div>
+            <div class="image-card">
+                <img src="ph2/int1.jpg" alt="Living Room">
+            </div>
+            <div class="image-card">
+                <img src="ph2/int3.jpg" alt="Bedroom">
+            </div>
+            <div class="image-card">
+                <img src="ph2/int4.jpg"alt="Kitchen">
+            </div>
+            <div class="image-card">
+                <img src="ph2/int2.jpg" alt="Bathroom">
+            </div>
+       </div>
+        <button class="slider-btn next-btn">&#9654;</button>
+    </div>
+
+    <!-- Villa Info -->
+    <div class="apartment-info">
+        <h1>Elysian Heights</h1>
+        <p class="address">
+          <i class="fas fa-map-marker-alt icon"></i> 
+          Pune
+        </p>
+        <p class="price">
+          <span>₹</span> 
+          2cr to 10cr
+        </p>
+      
+        <div class="details-grid">
+          <!-- General Section -->
+          <div class="details-section">
+            <h3>General</h3>
+            <ul>
+              <li>
+                <i class="fas fa-bolt icon"></i>
+                <div>
+                  <strong>Utilities</strong>
+                  <p>Tenant is responsible</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-paw icon"></i>
+                <div>
+                  <strong>Pets Policy</strong>
+                  <p>Pet is allowed</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-briefcase icon"></i>
+                <div>
+                  <strong>Income Policy</strong>
+                  <p>At least double the rent amount</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Sizes Section -->
+          <div class="details-section">
+            <h3>Sizes</h3>
+            <ul>
+              <li>
+                <i class="fas fa-ruler-combined icon"></i>
+                <div>
+                  <strong>Size</strong>
+                  <p>100 sqft</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-bed icon"></i>
+                <div>
+                  <strong>Beds</strong>
+                  <p>2 Beds</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-bath icon"></i>
+                <div>
+                  <strong>Bathroom</strong>
+                  <p>1 Bathroom</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Nearby Places Section -->
+          <div class="details-section">
+            <h3>Nearby Places</h3>
+            <ul>
+              <li>
+                <i class="fas fa-school icon"></i>
+                <div>
+                  <strong>School</strong>
+                  <p>500m away</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-bus icon"></i>
+                <div>
+                  <strong>Bus Stop</strong>
+                  <p>200m away</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-utensils icon"></i>
+                <div>
+                  <strong>Restaurant</strong>
+                  <p>450m away</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+              <div class="location-section">
+                  <h3>Location</h3>
+                  <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121036.27630737553!2d73.67866489726562!3d18.556735299999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf57f4555555%3A0x2578e92d4d31066!2sCastel%20Royale%20Luxury%20Towers!5e0!3m2!1sen!2sin!4v1733218125775!5m2!1sen!2sin" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+              </div>
+          
+              <!-- Contact Button -->
+              <div class="page-content">
+                <button type="submit" class="contact-owner" onclick="openPopup()">Contact with the owner</button>
+                <div class="popup" id="popup">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <form id="contactForm" action="/api/form" method="POST">
+                        <label for="name">Name <input type="text" id="name" name="name" required><br> </label>
+                        <label for="email">Email <input type="email" id="email" name="email" required><br> </label>
+                        <label for="phone">Phone <input type="tel" minlength="10" pattern="^\d{10}$" id="phone" name="phone" required><br></label>
+                        <label for="message" style="text-align: left; padding-left: 30px;">Message (optional)
+                          <textarea id="message" name="message" rows="4" cols="30"></textarea>
+                        </label><br>
+                        <label style="margin-top: 2px;"><input type="checkbox" id="tour_request" name="tour_request" >Request a house tour</label><br>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+          </div>
+      
+          <script src="script.js">
+           
+          </script>
+      </section>
+      </body>
+      </html>
+      

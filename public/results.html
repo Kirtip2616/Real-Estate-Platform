@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="apartment/cards.css">
+</head>
+<body>
+    <div class="apartment-grid" id="results-container">
+
+    <script>
+        // Fetch and display search results
+        const resultsContainer = document.getElementById('results-container');
+        const searchResults = JSON.parse(sessionStorage.getItem('searchResults'));
+        console.log('Search Results:', searchResults);
+        if (searchResults && searchResults.length > 0) {
+            searchResults.forEach(property => {
+                const propertyDetailsUrl = `${property.type.toLowerCase()}/${property.type.toLowerCase()}${property.id}-details.html`;
+                const propertyCard = `
+                    <div class="apartment-card">
+                        <a href="${propertyDetailsUrl}">
+                             <img src="${property.image_url}" alt="${property.name}">
+                        </a>
+                       <h3>${property.name}</h3>
+                        <p>Price: ${property.price}</p>
+                        <p>Location: ${property.location}</p>
+                    </div>
+                `;
+                resultsContainer.innerHTML += propertyCard;
+            });
+        } else {
+            resultsContainer.innerHTML = '<p>No results to display.</p>';
+        }
+    </script>
+    </div>
+</body>
+</html>

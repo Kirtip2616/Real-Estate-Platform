@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+  
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; /* Ensure content stays above background */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)); /* Dark gradient overlay */
+    z-index: 1; /* Ensure it stays behind the content */
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; /* Keep video in the background */
+}
+
+.div1 {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+    position: relative; /* Ensure it stays above the background */
+    z-index: 2;
+}
+
+.div1 h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    background: white;
+    padding: 0 5px;
+    font-size: 16px;
+    color: #aaa;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -5px;
+    font-size: 14px;
+    color: #007bff;
+}
+
+.b1 {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.b1:hover {
+    background: linear-gradient(90deg, #0056b3, #007bff);
+    transform: scale(1.05);
+}
+
+.div2 {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #666;
+}
+
+.div2 a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.div2 a:hover {
+    text-decoration: underline;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+.checkbox-container label {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="video-bg">
+        <source src="photos/loginBG.mp4" type="video/mp4">
+    </video>
+
+    <div class="div1">
+        <h1>Signup</h1>
+        <form action="http://localhost:3000/api/signup" id="signupForm" method="post">
+            <div class="input-container">
+                <input type="text" name="username" required placeholder="Username" id="username">
+                <label for="username">Username</label>
+            </div>
+            <div class="input-container">
+                <input type="email" id="email" name="email" required placeholder="Email">
+                <label for="email">Email</label>
+            </div>
+            <div class="input-container">
+                <input type="password"id="password" name="password" required placeholder="Password">
+                <label for="password">Password</label>
+            </div>
+            <button type="submit" class="b1">Signup</button>
+        </form>
+        <div class="div2">
+            <p>Already have an account? <a href="login1.html">Login here</a></p>
+        </div>
+    </div>
+    <script>
+        const signupForm = document.getElementById('signupForm'); // Assuming your form has an ID 'signupForm'
+        signupForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        try {
+            const response = await fetch('http://localhost:3000/api/signup', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username, email, password })
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert(data.message); 
+            window.location.href = 'login1.html'; 
+        } else {
+            alert(data.message); 
+        }
+        } 
+        catch (error) {
+        console.error('Error during signup:', error);
+        }
+        });
+
+    </script>
+    
+</body>
+</html>
+</body>
+</html>
