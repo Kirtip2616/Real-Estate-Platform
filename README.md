@@ -18,7 +18,7 @@ A **web-based Real Estate Platform** to simplify property browsing, listing, and
 - [Tech Stack](#-tech-stack)
 - [Installation](#-installation)
 - [Usage](#-usage)
-- [Screenshots](#-screenshots)
+- [User Interface Design and Outputs](#-User Interface Design and Outputs)
 - [Future Enhancements](#-future-enhancements)
 - [Contributor](#-contributor)
 - [Acknowledgements](#-acknowledgements)
