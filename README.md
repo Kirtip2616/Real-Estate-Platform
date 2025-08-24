@@ -12,16 +12,16 @@ A **web-based Real Estate Platform** to simplify property browsing, listing, and
 
 ## 📖 Table of Contents
 
-- [Introduction](#-introduction)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Installation](#-installation)
-- [License](#-license)
-- [Usage](#-usage)
-- [User Interface Design and Outputs](#-user-interface-design-and-outputs)
-- [Future Enhancements](#-future-enhancements)
-- [Author](#-author)
-- [Acknowledgements](#-acknowledgements)
+- Introduction
+- Features
+- Tech Stack
+- Installation
+- License
+- Usage]
+- User Interface Design and Outputs
+- Future Enhancements
+- Author
+
 
 ---
 
@@ -107,7 +107,7 @@ The **Real Estate Platform** bridges the gap between property seekers and owners
 - All rights reserved.
 - You may not copy, modify, distribute, or use this project, in whole or in part, without explicit written permission from the author.
 - Commercial or personal use without permission is strictly prohibited.
-See the full [LICENSE](LICENSE) file for details. 
+See the full [LICENSE](LICENSE.md) file for details. 
 ---
 
 ## 🎮 Usage
