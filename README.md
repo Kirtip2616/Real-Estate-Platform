@@ -115,8 +115,8 @@ Developed as part of the **BCA Final Year Project (2024–25)** at **K.L.E. Soci
 
 ## 🖼️ Screenshots
 
-- **🔐 Signup Page**  
-  ![Login Page](screenshots/login.png)
+- **🔐 Login Page**  
+  <img width="1920" height="979" alt="Image" src="https://github.com/user-attachments/assets/02390932-bb74-4b12-80a8-355271cb70c3" />
 
 - **🏠 Home Page**  
   ![Home Page](screenshots/homepage.png)
