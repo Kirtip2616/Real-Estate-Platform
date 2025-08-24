@@ -32,7 +32,6 @@ A **web-based Real Estate Platform** to simplify property browsing, listing, and
 The **Real Estate Platform** bridges the gap between property seekers and owners by offering a **transparent, accessible, and efficient** solution for real estate needs. It enables:
 
 - Property seekers to search, filter, and explore listings.
-- Owners/agents to post properties.
 - Direct communication via inquiries.
 
 
