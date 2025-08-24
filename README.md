@@ -32,7 +32,6 @@ The **Real Estate Platform** bridges the gap between property seekers and owners
 - Owners/agents to post properties.
 - Direct communication via inquiries.
 
-Developed as part of the **BCA Final Year Project (2024–25)** at **K.L.E. Society’s P.C. Jabin Science College, Hubballi**.
 
 ---
 
@@ -159,8 +158,4 @@ Developed as part of the **BCA Final Year Project (2024–25)** at **K.L.E. Soci
 
 ---
 
-## 🙏 Acknowledgements
 
-- **Prof. Sunil Vernekar**, HOD, BCA Department, for encouragement and support.
-- **Prof. Soniya Gudgunti**, Project Guide, for valuable guidance.
-- All teaching and non-teaching staff of KLE Society’s P.C. Jabin Science College.
