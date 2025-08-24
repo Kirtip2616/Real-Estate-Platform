@@ -113,7 +113,7 @@ Developed as part of the **BCA Final Year Project (2024–25)** at **K.L.E. Soci
 
 ---
 
-## 🖼️ Screenshots
+## 🖼️User Interface Design and Outputs
 
 - **🔐 Login Page**  
   <img width="1920" height="979" alt="Image" src="https://github.com/user-attachments/assets/02390932-bb74-4b12-80a8-355271cb70c3" />
@@ -130,6 +130,7 @@ Developed as part of the **BCA Final Year Project (2024–25)** at **K.L.E. Soci
 - **📍 Property Details Page**  
 <img width="1897" height="969" alt="Image" src="https://github.com/user-attachments/assets/4106faa9-e993-4ab1-8294-9283b8598169" />
 
+- **📍 Property Details Page**  
 <img width="1894" height="912" alt="Image" src="https://github.com/user-attachments/assets/7e1459a4-82f2-4aa7-bfa9-19ea3eff8853" />
 
 
