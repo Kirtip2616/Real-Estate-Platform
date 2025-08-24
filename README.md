@@ -1,6 +1,7 @@
 # 🏡 Real Estate Platform — Serene Living
 
 <p align="center">
+   <img src="https://img.shields.io/badge/license-proprietary-red.svg" />
   <img src="https://img.shields.io/badge/status-completed-success.svg" />
   <img src="https://img.shields.io/badge/made%20with-Node.js-green.svg" />
   <img src="https://img.shields.io/badge/database-MySQL-orange.svg" />
