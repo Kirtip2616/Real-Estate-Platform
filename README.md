@@ -116,23 +116,23 @@ Developed as part of the **BCA Final Year Project (2024–25)** at **K.L.E. Soci
 ## 🖼️ Screenshots
 
 - **🔐 Signup Page**  
-  ![Login Page](docs/screenshots/login.png)
+  ![Login Page](screenshots/login.png)
 
 - **🏠 Home Page**  
-  ![Home Page](docs/screenshots/homepage.png)
+  ![Home Page](screenshots/homepage.png)
 
 - **📋Featured properties section**  
-  ![Featured properties section](docs/screenshots/propertylistings.png)
+  ![Featured properties section](screenshots/propertylistings.png)
 
 - **📋Property Listings** 
-  ![Property Listings](docs/screenshots/haha.png)
+  ![Property Listings](screenshots/haha.png)
 
 - **📍 Property Details Page**  
-  ![Property Details](docs/screenshots/details1.png)
-  ![Property Details](docs/screenshots/detailss.png)
+  ![Property Details](screenshots/details1.png)
+  ![Property Details](screenshots/detailss.png)
 
 - **Contact Form**  
-  ![Contact Form](docs/screenshots/details3.png)
+  ![Contact Form](screenshots/details3.png)
 
 ---
 
