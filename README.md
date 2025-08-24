@@ -18,6 +18,7 @@ A **web-based Real Estate Platform** to simplify property browsing, listing, and
 - Tech Stack
 - Installation
 - License
+- Contributions 
 - Usage]
 - User Interface Design and Outputs
 - Future Enhancements
@@ -105,10 +106,15 @@ The **Real Estate Platform** bridges the gap between property seekers and owners
 ## 📜License
 
 - **This project is licensed under a Proprietary License.**
-- All rights reserved.
-- You may not copy, modify, distribute, or use this project, in whole or in part, without explicit written permission from the author.
-- Commercial or personal use without permission is strictly prohibited.
+- Commercial or personal use without permission is prohibited.
 See the full [LICENSE](LICENSE.md) file for details. 
+---
+## 🤝Contributions
+  
+Contributions are possible, but only with my prior approval.  
+
+If you have suggestions or would like to collaborate, please open an Issue to discuss your idea before submitting any changes.  
+
 ---
 
 ## 🎮 Usage
