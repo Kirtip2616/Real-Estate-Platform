@@ -152,8 +152,6 @@ The **Real Estate Platform** bridges the gap between property seekers and owners
 
 - **Kirti Pawar** 
 
-**Guided by**: Prof. Soniya Gudgunti  
-**BCA Department**, KLE Society’s P.C. Jabin Science College, Hubballi
 
 
 ---
