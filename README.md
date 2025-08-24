@@ -119,20 +119,22 @@ Developed as part of the **BCA Final Year Project (2024–25)** at **K.L.E. Soci
   <img width="1920" height="979" alt="Image" src="https://github.com/user-attachments/assets/02390932-bb74-4b12-80a8-355271cb70c3" />
 
 - **🏠 Home Page**  
-  ![Home Page](screenshots/homepage.png)
+<img width="1903" height="958" alt="Image" src="https://github.com/user-attachments/assets/3a2b0f91-aaf5-42d4-9d9f-d3566e6a60f8" />
 
 - **📋Featured properties section**  
-  ![Featured properties section](screenshots/propertylistings.png)
+<img width="1901" height="840" alt="Image" src="https://github.com/user-attachments/assets/fac8aaa2-0ead-4d5e-9ede-c6dd6a0a6bcc" />
 
 - **📋Property Listings** 
-  ![Property Listings](screenshots/haha.png)
+ <img width="1911" height="964" alt="Image" src="https://github.com/user-attachments/assets/bb272e12-e8f4-4092-a461-02d44cea1e40" />
 
 - **📍 Property Details Page**  
-  ![Property Details](screenshots/details1.png)
-  ![Property Details](screenshots/detailss.png)
+<img width="1897" height="969" alt="Image" src="https://github.com/user-attachments/assets/4106faa9-e993-4ab1-8294-9283b8598169" />
+
+<img width="1894" height="912" alt="Image" src="https://github.com/user-attachments/assets/7e1459a4-82f2-4aa7-bfa9-19ea3eff8853" />
+
 
 - **Contact Form**  
-  ![Contact Form](screenshots/details3.png)
+<img width="1896" height="979" alt="Image" src="https://github.com/user-attachments/assets/a5d28b08-bda5-4d64-bd59-015f3a5c93d1" />
 
 ---
 
