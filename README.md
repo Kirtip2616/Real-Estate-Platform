@@ -1,7 +1,7 @@
 # 🏡 Real Estate Platform — Serene Living
 
 <p align="center">
-   <img src="https://img.shields.io/badge/license-proprietary-red.svg" />
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" />
   <img src="https://img.shields.io/badge/status-completed-success.svg" />
   <img src="https://img.shields.io/badge/made%20with-Node.js-green.svg" />
   <img src="https://img.shields.io/badge/database-MySQL-orange.svg" />
@@ -13,16 +13,15 @@ A **web-based Real Estate Platform** to simplify property browsing, listing, and
 
 ## 📖 Table of Contents
 
-- Introduction
-- Features
-- Tech Stack
-- Installation
-- License
-- Contributions 
-- Usage
-- User Interface Design and Outputs
-- Author
-
+- [Introduction](#-introduction)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Screenshots](#-screenshots)
+- [Future Enhancements](#-future-enhancements)
+- [Contributor](#-contributor)
+- [Acknowledgements](#-acknowledgements)
 
 ---
 
@@ -31,8 +30,10 @@ A **web-based Real Estate Platform** to simplify property browsing, listing, and
 The **Real Estate Platform** bridges the gap between property seekers and owners by offering a **transparent, accessible, and efficient** solution for real estate needs. It enables:
 
 - Property seekers to search, filter, and explore listings.
+- Owners/agents to post properties.
 - Direct communication via inquiries.
 
+Developed as part of the **BCA Final Year Project (2024–25)** at **K.L.E. Society’s P.C. Jabin Science College, Hubballi**.
 
 ---
 
@@ -99,19 +100,6 @@ The **Real Estate Platform** bridges the gap between property seekers and owners
 5. **Access the app**
 
    Open `http://localhost:3000` in your browser.
----
-
-## 📜License
-
-- **This project is licensed under a Proprietary License.**
-- Commercial or personal use without permission is prohibited.
-See the full [LICENSE](LICENSE.md) file for details. 
----
-## 🤝Contributions
-  
-Contributions are possible, but only with my prior approval.  
-
-If you have suggestions or would like to collaborate, please open an Issue to discuss your idea before submitting any changes.  
 
 ---
 
@@ -125,41 +113,54 @@ If you have suggestions or would like to collaborate, please open an Issue to di
 
 ---
 
-## 🖼️User Interface Design and Outputs
+## 🖼️ Screenshots
 
-- **🔐 Login Page**  
-  <img width="1920" height="979" alt="Image" src="https://github.com/user-attachments/assets/02390932-bb74-4b12-80a8-355271cb70c3" />
+Add images to `docs/screenshots/` and reference them here.
+
+- **🔐 Signup Page**  
+  ![Login Page](docs/screenshots/login.png)
 
 - **🏠 Home Page**  
-<img width="1903" height="958" alt="Image" src="https://github.com/user-attachments/assets/3a2b0f91-aaf5-42d4-9d9f-d3566e6a60f8" />
+  ![Home Page](docs/screenshots/homepage.png)
 
 - **📋Featured properties section**  
-<img width="1901" height="840" alt="Image" src="https://github.com/user-attachments/assets/fac8aaa2-0ead-4d5e-9ede-c6dd6a0a6bcc" />
+  ![Featured properties section](docs/screenshots/propertylistings.png)
 
 - **📋Property Listings** 
- <img width="1911" height="964" alt="Image" src="https://github.com/user-attachments/assets/bb272e12-e8f4-4092-a461-02d44cea1e40" />
+  ![Property Listings](docs/screenshots/haha.png)
 
 - **📍 Property Details Page**  
-<img width="1897" height="969" alt="Image" src="https://github.com/user-attachments/assets/4106faa9-e993-4ab1-8294-9283b8598169" />
-
-- **📍 Property Details Page**  
-<img width="1894" height="912" alt="Image" src="https://github.com/user-attachments/assets/7e1459a4-82f2-4aa7-bfa9-19ea3eff8853" />
-
+  ![Property Details](docs/screenshots/details1.png)
+  ![Property Details](screenshots/detailss.png)
 
 - **Contact Form**  
-<img width="1896" height="979" alt="Image" src="https://github.com/user-attachments/assets/a5d28b08-bda5-4d64-bd59-015f3a5c93d1" />
+  ![Contact Form](docs/screenshots/details3.png)
 
+---
+
+## 🔮 Future Enhancements
+
+- User Dashboard for managing properties & inquiries
+- Real-time chat system
+- Payment gateway integration
+- AI-based property recommendations
+- Mobile App (Android & iOS)
+- Virtual Property Tours (360° / VR)
+
+---
+
+## 👩‍💻 Contributor
+
+- **Kirti Pawar** 
+
+**Guided by**: Prof. Soniya Gudgunti  
+**BCA Department**, KLE Society’s P.C. Jabin Science College, Hubballi
 
 
 ---
 
-## 👩‍💻Author
+## 🙏 Acknowledgements
 
-- **Kirti Pawar**
-- **EMAIL**:kirtivpawar26@gmail.com
-
-
-
----
-
-
+- **Prof. Sunil Vernekar**, HOD, BCA Department, for encouragement and support.
+- **Prof. Soniya Gudgunti**, Project Guide, for valuable guidance.
+- All teaching and non-teaching staff of KLE Society’s P.C. Jabin Science College.
