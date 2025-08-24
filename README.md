@@ -115,8 +115,6 @@ Developed as part of the **BCA Final Year Project (2024–25)** at **K.L.E. Soci
 
 ## 🖼️ Screenshots
 
-Add images to `docs/screenshots/` and reference them here.
-
 - **🔐 Signup Page**  
   ![Login Page](screenshots/login.png)
 
