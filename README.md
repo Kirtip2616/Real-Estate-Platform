@@ -21,7 +21,6 @@ A **web-based Real Estate Platform** to simplify property browsing, listing, and
 - Contributions 
 - Usage
 - User Interface Design and Outputs
-- Future Enhancements
 - Author
 
 
@@ -150,16 +149,7 @@ If you have suggestions or would like to collaborate, please open an Issue to di
 - **Contact Form**  
 <img width="1896" height="979" alt="Image" src="https://github.com/user-attachments/assets/a5d28b08-bda5-4d64-bd59-015f3a5c93d1" />
 
----
 
-## 🔮 Future Enhancements
-
-- User Dashboard for managing properties & inquiries
-- Real-time chat system
-- Payment gateway integration
-- AI-based property recommendations
-- Mobile App (Android & iOS)
-- Virtual Property Tours (360° / VR)
 
 ---
 
