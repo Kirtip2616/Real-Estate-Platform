@@ -1,5 +1,4 @@
-api key imortant
-AIzaSyDjKMCI3MDIGJsN8UezG4JFLxR_aUbIXUo
+
 
 # 🏡 Real Estate Platform — Serene Living
 
